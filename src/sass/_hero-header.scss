@@ -58,18 +58,20 @@
 }
 
 .hero__h1 {
-  color: #FCFCFC;
-  font-family: "Seymour One";
+  width: 247px;
+  height: 97px;
+  color: #fcfcfc;
+  font-family: 'Seymour One';
   font-size: 26px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.04px;
   text-transform: uppercase;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .hero__h1--span {
-  color: #FCFCFC;
+  color: #fcfcfc;
   font-size: 34px;
   font-weight: 400;
   line-height: 96.5%;
@@ -135,30 +137,47 @@
   bottom: 0;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .container {
-      min-width: 768px;
-    }
+    min-width: 768px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
 
   .button {
     display: flex;
+    align-items: center;
     column-gap: 32px;
   }
 
   .button-buy {
+    // button
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 152px;
     height: 42px;
-    flex-shrink: 0;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    
-    display: flex;
-    text-align: center;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--yellow);
+    cursor: pointer;
+    transition: var(--default-transition);
+    // text
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+  }
+
+  .button-buy:hover {
+    background-color: var(--green);
+  }
+
+  .hero {
+    padding-top: 13px;
+  }
+
+  .hero__h1 {
+    margin-bottom: 24px;
   }
 }
