@@ -92,6 +92,11 @@
     box-shadow: 0px 8px 30px 0px rgba(10, 136, 23, 0.25);
 }
 
+.product__circle__item{
+    position: absolute;
+    bottom: 3%;
+}
+
 
 .container__list {
     display: flex;
@@ -100,6 +105,13 @@
     align-items: center;
     flex-wrap: wrap;
 
+}
+
+.container__items__btn{
+    width: 41px;
+    height: 16px;
+    background: transparent;
+    border: none;
 }
 
 .container__items h2 {
@@ -124,7 +136,6 @@
     line-height: 176%;
     letter-spacing: 0.56px;
 }
-
 
 .container__items svg {
     display: flex;
