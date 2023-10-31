@@ -33,6 +33,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 10.5rem;
 }
 
 .container__head__list {
@@ -40,7 +41,6 @@
 }
 
 .container__head__item {
-    margin-bottom: 9.25rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -71,20 +71,21 @@
 }
 
 
-.container__products__box {
+.container__products__boxfirst {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border-radius: 24px;
-    width: 320px;
-    height: 428px;
+    width: 280px;
+    height: 420px;
     background-color: var(--lightgreen);
+    padding: 0 2.5rem;
 }
 
 .container__products__circle{
     position: absolute;
-    top: 22%;
+    top: 14%;
     width: 200px;
     height: 200px;
     border-radius: 302px;
@@ -114,7 +115,8 @@
     border: none;
 }
 
-.container__items h2 {
+.container__items h2,
+.container__item__sec h2 {
     color: #131313;
     text-align: center;
     font-family: Montserrat;
@@ -126,7 +128,8 @@
     text-transform: uppercase;
 }
 
-.container__items p {
+.container__items p,
+.container__item__sec p {
     color: #131313;
     text-align: center;
     font-family: Montserrat;
@@ -141,4 +144,40 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+// Box 2nd
+
+.container__products__boxsecond{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 420px;
+    background-color: var(--yellow);
+    border-radius: 24px;
+    padding: 0 2.5rem;
+}
+
+.container__list__sec{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.container__boxsec__circle{
+    position: absolute;
+    bottom: 30%;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.70) 0%, rgba(248, 210, 78, 0.70) 100%), #D9D9D9;
+    box-shadow: 0px 8px 30px 0px rgba(153, 114, 23, 0.25);
+}
+
+.boxsec__circle__item{
+    position: absolute;
+    bottom: 3%;
 }
