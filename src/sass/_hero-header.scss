@@ -100,18 +100,15 @@
   color: var(--green);
 }
 
-.hero__li--products {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  // text
+.hero__li-button {
+  cursor: pointer;
   color: var(--black);
   text-decoration: none;
-  text-align: center;
   font-size: 12px;
   font-weight: 600;
   line-height: normal;
   // border
+  background-color: transparent;
   border-radius: 8px;
   border: 2px solid var(--yellow);
   width: 108px;
@@ -119,8 +116,7 @@
   flex-shrink: 0;
 }
 
-.hero__li--products:hover {
-  color: currentColor;
+.hero__li-button:hover {
   border-color: var(--green);
 }
 
